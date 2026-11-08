@@ -1,28 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
-
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -113,8 +89,6 @@
 
 
 
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -130,6 +104,20 @@ a { text-decoration: none; }
 li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
+
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+[data-select],
+[data-filter-btn],
+[data-nav-link] {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
 
 button {
   font: inherit;

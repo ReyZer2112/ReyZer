@@ -106,19 +106,6 @@ li { list-style: none; }
 img, ion-icon, a, button, time, span { display: block; }
 
 
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
-button,
-a,
-[data-select],
-[data-filter-btn],
-[data-nav-link] {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-}
-
 button {
   font: inherit;
   background: none;
@@ -1885,4 +1872,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;   /* rasm to‘liq ko‘rinadi */
+}
+
+
+/* Mobil qurilmalarda tugma bosilganda chiqadigan standart fon effektini olib tashlash */
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Barcha elementlar uchun bosilgandagi rangli effektni olib tashlash */
+*, *::before, *::after {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none;
 }
